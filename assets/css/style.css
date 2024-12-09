@@ -1,0 +1,141 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Layout geral */
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Fixando o Header */
+  .header {
+    position: fixed; /* Fixa o header no topo */
+    top: 0; /* Fixa no topo */
+    left: 0; /* Fixa no canto esquerdo */
+    width: 100%; /* Ocupa toda a largura da tela */
+    background-color: #3f51b5; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    padding: 1rem; /* Espaciamento interno */
+    z-index: 1000; /* Garante que o header fique por cima de outros elementos */
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .login-area .login-btn {
+    background-color: #fff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+ 
+  .login-area .cadastrese-btn {
+    background-color: #fff;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 120px); /* Ajuste a altura para evitar sobreposição com o header */
+    padding-top: 0; /* Espaçamento para o conteúdo abaixo do header fixo */
+   
+  } 
+   
+  /* Sidebar */
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    height: 100%;
+    
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #575757;
+  }
+  
+  .dropdown {
+    font-size: 18px;
+  }
+
+
+  .dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    background-color: #444;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: #fff;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #666;
+  }
+  
+  /* Main Content Section */
+  .content {
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin: 20px 20px;
+    border: 1px solid #ddd;
+
+  }
+  
+ .content p {
+    font-size: 17px;
+ }
+
+  /* Footer */
+  .footer {
+    background-color: #3f51b5;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  

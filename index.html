@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR" ng-app="novoApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Aplicação Angular</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Estilo CSS -->
+
+    <script src="node_modules/angular/angular.js"></script> <!-- AngularJS -->
+    <script src="node_modules/angular-route/angular-route.js"></script> <!-- Angular Route -->
+    <script src="app/app.js"></script> <!-- Módulo principal -->
+    <script src="app/routes.js"></script> <!-- Configuração de rotas -->
+    <script src="app/controllers/controller.js"></script> <!-- Controladores -->
+    
+    <Script src="app/controllers/projetosController.js" ></Script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <app-header></app-header>
+      
+        <div class="main-layout">
+          <!-- Sidebar -->
+          <app-sidebar></app-sidebar>
+      
+          <!-- Content -->
+          <div class="content">
+            <app-content></app-content>
+          </div>
+        </div>
+      
+        <!-- Footer -->
+        <app-footer></app-footer>
+      </div>
+      
+    <main>
+        <div ng-view></div> <!-- Aqui o conteúdo das rotas será carregado -->
+    </main>
+</body>
+</html>
+
+
+

@@ -1,0 +1,50 @@
+<div class="dashboard">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <h1>FullStack - Projetos</h1>
+        <div class="login-area">
+          <button class="login-btn"><strong>Login</strong></button>
+          <button class="cadastrese-btn"><strong>Cadastre-se</strong></button>
+        </div>
+      </div>
+    </header>
+  
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Sidebar -->
+<nav class="sidebar">
+    <ul>
+      <li class="dropdown" [class.open]="isProjectsOpen" (click)="toggleDropdown('projects')">
+        <a href="#"><strong>Projetos</strong></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Projeto 1</a></li>
+          <li><a href="#">Projeto 2</a></li>
+          <li><a href="#">Projeto 3</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" [class.open]="isTasksOpen" (click)="toggleDropdown('tasks')">
+        <a href="#"><strong>Tarefas</strong></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Tarefa 1</a></li>
+          <li><a href="#">Tarefa 2</a></li>
+          <li><a href="#">Tarefa 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+  
+      <!-- Main Section -->
+      <div class="content">
+        <h1>Bem-vindo à Dashboard!</h1>
+        <p>Esta é a página principal do seu painel de controle.</p>
+      </div>
+    </div>
+  
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
+  </div>
+  
