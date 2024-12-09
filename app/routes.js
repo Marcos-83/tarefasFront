@@ -6,10 +6,7 @@ app.config(function($routeProvider) {
             controller: 'HomeController'
         })
 
-    .when('/projetos', {
-            templateUrl: 'app/views/projetos.html',
-            controller: 'projetosController'
-        })
+    
         
 
 
